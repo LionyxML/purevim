@@ -55,10 +55,6 @@ run_if_feat_enabled("statusline", function()
 	require("core.statusline")
 end)
 
-run_if_feat_enabled("colorscheme", function()
-	require("core.colorscheme").setup()
-end)
-
 run_if_feat_enabled("usql", function()
 	require("core.integrations.usql")
 end)
