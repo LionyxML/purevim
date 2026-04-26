@@ -55,16 +55,16 @@ run_if_feat_enabled("statusline", function()
 	require("core.statusline")
 end)
 
-run_if_feat_enabled("colorscheme", function()
-	require("core.colorscheme").setup()
-end)
-
 run_if_feat_enabled("usql", function()
 	require("core.integrations.usql")
 end)
 
 run_if_feat_enabled("dashboard", function()
 	require("core.dashboard").setup()
+end)
+
+run_if_feat_enabled("format", function(opts)
+	require("core.format").setup(opts)
 end)
 
 -- Load optional post_init.lua file
